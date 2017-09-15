@@ -1,40 +1,14 @@
+#import section
 from gpiozero import LED
 from gpiozero import Button
 from time import sleep
+from funciones import calcular_figuras,shutdown_button,activar_sonido,playSound
 import pygame
 
-pygame.init()
-pygame.mixer.music.load('metro_bar.wav')
 led1 = LED(27)  #led de prueba para saludo y repite el patron
 metronomo=None
 nivel = 3
 tempo = 60.0
-
-#funcion para apagar la raspberry
-def shutdown():
-    check_call(['sudo', 'poweroff'])
-
-def playSound(filename):
-    #pygame.mixer.music.load(filename)
-    pygame.mixer.music.play()
-
-# donde x es el numero de gpio que usaremos en el boton
-shutdown_btn = Button(2, hold_time=2)
-shutdown_btn.when_held = shutdown
-
-
-def calcular_figuras(bmp):
-    negra = 60.0/bmp
-    blanca = 2*negra
-    redonda = 4*negra
-    corchea = 0.5*negra
-    semicorchea = 0.25*negra
-    return {
-        'semicorchea': semicorchea,
-        'corchea': corchea,
-        'negra': negra,
-        'blanca': blanca,
-        'redonda': redonda}
 
 
 def nivel_3(led):
@@ -74,6 +48,12 @@ def nivel_3(led):
     led.on()
     sleep(f['corchea']*0.9)
 
+def nivel_2():
+    pass
+
+def nivel_1():
+    pass
+
 
 f = calcular_figuras(tempo)
 led1.off()
@@ -87,7 +67,9 @@ playSound('metro_bar.wav')
 sleep(f['negra'])
 # prosigue el programa
 while True:
-    if nivel == 3:
+    if nivell==1:
+        nivel_1(led1)
+    elif nivel ==2:
+        nivel_2
+    else nivel == 3:
         nivel_3(led1)
-
-
