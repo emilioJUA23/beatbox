@@ -66,7 +66,6 @@ class Numeral:
     def beat(cls):
         cls.beat_index += 1
         cls.beat_index %= len(cls.beats)
-        pygame.mixer.music.play()
 
     @classmethod
     def draw(cls, screen, amount, full):

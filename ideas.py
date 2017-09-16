@@ -12,14 +12,14 @@ pygame.mixer.music.load('metro_bar.wav')
 def nivel_3(led):
     # primer compas
     #1
-    playSound('metro_bar.wav')
+    playSound()
     led.on()
     sleep(f['corchea'])
     #an
     led.off()
     sleep(f['corchea'])
     # 2
-    playSound('metro_bar.wav')
+    playSound()
     led.on()
     sleep(f['corchea'])
     # an
@@ -28,7 +28,7 @@ def nivel_3(led):
     led.on()
     sleep(f['corchea']*0.9)
     # 3
-    playSound('metro_bar.wav')
+    playSound()
     led.off()
     sleep(f['corchea']*0.1)
     led.on()
@@ -37,7 +37,7 @@ def nivel_3(led):
     led.off()
     sleep(f['corchea'])
     # 4
-    playSound('metro_bar.wav')
+    playSound()
     led.on()
     sleep(f['corchea'])
     # an

@@ -4,6 +4,7 @@ from signal import pause
 from gpiozero import LED
 from gpiozero import Button
 from time import sleep
+import threading
 import pygame
 
 pygame.init()
@@ -30,5 +31,5 @@ def shutdown_button(x):
     shutdown_btn = Button(x, hold_time=2)
     shutdown_btn.when_held = shutdown
 
-def playSound(filename):
+def playSound():
     pygame.mixer.music.play()
