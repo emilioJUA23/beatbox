@@ -51,7 +51,7 @@ def nivel_1():
 def despedida():
     pass
 
-led1 = LED(27)  #led de prueba para saludo y repite el patron   
+led1 = LED(27)  #led de prueba para saludo y repite el patron
 shutdown_button(2) #define boton de apagado en el gpio
 nivel = 3       #define el nivel que vamos a practicar
 tempo = 60.0    #el tempo en el cual nos vamos a mover
