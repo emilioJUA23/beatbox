@@ -2,14 +2,8 @@
 from gpiozero import LED
 from gpiozero import Button
 from time import sleep
-from funciones import calcular_figuras,shutdown_button,activar_sonido,playSound
 import pygame
-
-led1 = LED(27)  #led de prueba para saludo y repite el patron
-metronomo=None
-nivel = 3
-tempo = 60.0
-
+from funciones import calcular_figuras,shutdown_button,activar_sonido,playSound
 
 def nivel_3(led):
     # primer compas
@@ -54,17 +48,14 @@ def nivel_2():
 def nivel_1():
     pass
 
+def despedida():
+    pass
 
+led1 = LED(27)  #led de prueba para saludo y repite el patron   
+shutdown_button(2) #define boton de apagado en el gpio
+nivel = 3       #define el nivel que vamos a practicar
+tempo = 60.0    #el tempo en el cual nos vamos a mover
 f = calcular_figuras(tempo)
-led1.off()
-playSound('metro_bar.wav')
-sleep(f['negra'])
-playSound('metro_bar.wav')
-sleep(f['negra'])
-playSound('metro_bar.wav')
-sleep(f['negra'])
-playSound('metro_bar.wav')
-sleep(f['negra'])
 # prosigue el programa
 while True:
     if nivell==1:
