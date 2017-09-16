@@ -59,7 +59,7 @@ def despedida():
 led1 = LED(17)  #led de prueba para saludo y repite el patron
 shutdown_button(2) #define boton de apagado en el gpio
 nivel = 3       #define el nivel que vamos a practicar
-tempo = 60.0    #el tempo en el cual nos vamos a mover
+tempo = int(input("Enter a tempo: "))    #el tempo en el cual nos vamos a mover
 f = calcular_figuras(tempo)
 # prosigue el programa
 while True:
