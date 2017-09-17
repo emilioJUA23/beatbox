@@ -51,14 +51,44 @@ def nivel_2():
     pass
 
 def nivel_1():
-    pass
+    # primer compas
+    #1
+    playSound()
+    led.on()
+    sleep(f['corchea'])
+    #an
+    led.off()
+    sleep(f['corchea'])
+    # 2
+    playSound()
+    led.on()
+    sleep(f['corchea'])
+    # an
+    led.off()
+    sleep(f['corchea'])
+    # 3
+    playSound()
+    led.on()
+    sleep(f['corchea']*0.1)
+    led.blink()
+    # an
+    led.on()
+    sleep(f['corchea'])
+    # 4
+    playSound()
+    led.off()
+    sleep(f['corchea'])
+    # an
+    led.on()
+    sleep(f['corchea']*)
+
 
 def despedida():
     pass
 
 led1 = LED(17)  #led de prueba para saludo y repite el patron
 shutdown_button(2) #define boton de apagado en el gpio
-nivel = 3       #define el nivel que vamos a practicar
+nivel = 1       #define el nivel que vamos a practicar
 tempo = int(input("Enter a tempo: "))    #el tempo en el cual nos vamos a mover
 f = calcular_figuras(tempo)
 # prosigue el programa
