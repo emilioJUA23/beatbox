@@ -378,7 +378,7 @@ led1 = LED(17)  #led de prueba para saludo y repite el patron
 shutdown_button(2) #define boton de apagado en el gpio
 nivel = 1       #define el nivel que vamos a practicar
 #tempo = int(input("Enter a tempo: "))    #el tempo en el cual nos vamos a mover
-tempo=75
+tempo=60
 f = calcular_figuras(tempo)
 # prosigue el programa
 for i in [1,2,3,4,5,6,7,8]:
@@ -388,7 +388,7 @@ while True:
     if nivel==1:
         nivel_1(led1)
     elif nivel ==2:
-        nivel_2
+        nivel_2(led1)
     elif nivel == 3:
         nivel_3(led1)
     else:
