@@ -1,0 +1,21 @@
+basados en el mappeo de raspbery provisto por https://gpiozero.readthedocs.io/en/stable/recipes.html
+puertos que se usaran para las leds 
+14
+15
+18
+23
+24
+25
+8
+7
+puertos de sonido y bmp 
+2
+3
+4
+17
+led de control y boton de pulsado
+27 
+22
+led para apagar raspberry 
+10
+
