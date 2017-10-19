@@ -375,7 +375,8 @@ def despedida():
     pass
 
 led1,led2,led3,led4,led5,led6,led7,led8 = LED(14),LED(15),LED(18),LED(23),LED(24),LED(25),LED(8),LED(7)  #led de prueba para saludo y repite el patron
-shutdown_button(2) #define boton de apagado en el gpio
+shutdown_button(10) #define boton de apagado en el gpio
+sonido_mas,sonido_menos,bmp_mas,bmp_menos,pulsado= Button(2),Button(3),Button(4),Button(17),Button(27)
 nivel = 1       #define el nivel que vamos a practicar
 #tempo = int(input("Enter a tempo: "))    #el tempo en el cual nos vamos a mover
 tempo=60
