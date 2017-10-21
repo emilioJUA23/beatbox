@@ -88,7 +88,7 @@ def nivel_1():
     playSound()
     encender_led(led7)
     #an
-    enceder_led(led8)
+    encender_led(led8)
     #cuarto compas
     #1
     playSound()
@@ -109,7 +109,7 @@ def nivel_1():
     playSound()
     encender_led(led7)
     #an
-    enceder_led(led8)
+    encender_led(led8)
     #quinto compas
     #1
     playSound()
@@ -118,14 +118,14 @@ def nivel_1():
     apagar_led(led2)
     #2
     playSound()
-    enceder_led(led3)
+    encender_led(led3)
     #an
-    enceder_led(led4)
+    encender_led(led4)
     #3
     playSound()
-    enceder_led(led5)
+    encender_led(led5)
     #an
-    enceder_led(led6)
+    encender_led(led6)
     #4
     playSound()
     apagar_led(led7)
@@ -139,14 +139,14 @@ def nivel_1():
     apagar_led(led2)
     #2
     playSound()
-    enceder_led(led3)
+    encender_led(led3)
     #an
     apagar_led(led4)
     #3
     playSound()
-    enceder_led(led5)
+    encender_led(led5)
     #an
-    enceder_led(led6)
+    encender_led(led6)
     #4
     playSound()
     encender_led(led7)
@@ -160,9 +160,9 @@ def nivel_1():
     encender_led(led2)
     #2
     playSound()
-    enceder_led(led3)
+    encender_led(led3)
     #an
-    enceder_led(led4)
+    encender_led(led4)
     #3
     playSound()
     apagar_led(led5)
@@ -181,14 +181,14 @@ def nivel_1():
     encender_led(led2)
     #2
     playSound()
-    enceder_led(led3)
+    encender_led(led3)
     #an
-    enceder_led(led4)
+    encender_led(led4)
     #3
     playSound()
-    enceder_led(led5)
+    encender_led(led5)
     #an
-    enceder_led(led6)
+    encender_led(led6)
     #4
     playSound()
     encender_led(led7)
@@ -206,7 +206,7 @@ centinela_reaction= 0 #esta variable cambiara de estado cuando la persona deba d
 tempo=60
 f = calcular_figuras(tempo)
 # prosigue el programa
-for i in [1,2,3,4,5,6,7,8]:
+for i in range(1,9):
     playSound()
     sleep(f['negra'])
 while True:
