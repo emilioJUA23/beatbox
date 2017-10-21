@@ -10,12 +10,6 @@ pygame.mixer.pre_init(44100, -16, 1, 512)
 pygame.init()
 pygame.mixer.music.load('metro_bar.wav')
 
-def nivel_3(led):
-    pass
-
-def nivel_2(led):
-    pass
-
 def encender_led(led):
     led.on()
     sleep(f['corchea'])
@@ -192,6 +186,347 @@ def nivel_1():
     #4
     playSound()
     encender_led(led7)
+    #an
+    encender_led(led8)
+
+def nivel_2(led):
+    # primer compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    # 2
+    playSound()
+    encender_led(led3)
+    # an
+    apagar_led(led4)
+    # 3
+    playSound()
+    encender_led(led5)
+    # an
+    encender_led(led6)
+    # 4
+    playSound()
+    apagar_led(led7)
+    # an
+    encender_led(led8)
+    #segundo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #tercer compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #cuarto compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
+    #quinto compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #sexto compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    apagar_led(led8)
+    #septimo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    apagar_led(led8)
+    #octavo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+
+
+def nivel_3(led):
+    # primer compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    # 2
+    playSound()
+    encender_led(led3)
+    # an
+    encender_led(led4)
+    # 3
+    playSound()
+    encender_led(led5)
+    # an
+    apagar_led(led6)
+    # 4
+    playSound()
+    encender_led(led7)
+    # an
+    encender_led(led8)
+    #segundo compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
+    #tercer compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #cuarto compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
+    #quinto compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #sexto compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #septimo compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
+    #octavo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
     #an
     encender_led(led8)
 
