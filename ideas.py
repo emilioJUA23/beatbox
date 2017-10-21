@@ -11,373 +11,71 @@ pygame.init()
 pygame.mixer.music.load('metro_bar.wav')
 
 def nivel_3(led):
-    # primer compas
-    #1
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    #an
-    led.off()
-    sleep(f['corchea'])
-    # 2
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea']*0.1)
-    led.on()
-    sleep(f['corchea']*0.9)
-    # 3
-    playSound()
-    led.off()
-    sleep(f['corchea']*0.1)
-    led.on()
-    sleep(f['corchea']*0.9)
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 4
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea']*0.1)
-    led.on()
-    sleep(f['corchea']*0.9)
+    pass
 
 def nivel_2(led):
-    # primer compas
-    #1
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    #an
-    led.off()
-    sleep(f['corchea'])
-    # 2
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 3
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea']*0.2)
-    led.on()
-    sleep(f['corchea']*0.8)
-    # 4
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-
-def nivel_1(led):
-    # primer compas
-    #1
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    #an
-    led.off()
-    sleep(f['corchea'])
-    # 2
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 3
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 4
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # segundo compas
-    #1
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    #an
-    led.on()
-    sleep(f['corchea'])
-    # 2
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 3
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea'])
-    # 4
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # tercer compas
-    #1
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    #an
-    led.off()
-    sleep(f['corchea'])
-    # 2
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea'])
-    # 3
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 4
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # cuarto compas
-    #1
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    #an
-    led.on()
-    sleep(f['corchea'])
-    # 2
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 3
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 4
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea'])
-    # quinto compas
-    #1
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    #an
-    led.off()
-    sleep(f['corchea'])
-    # 2
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # 3
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea'])
-    # 4
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # sexto compas
-    #1
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    #an
-    led.off()
-    sleep(f['corchea'])
-    # 2
-    playSound()
-    led.on()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 3
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # 4
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # septimo compas
-    #1
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    #an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # 2
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea'])
-    # 3
-    playSound()
-    led.off()
-    sleep(f['corchea'])
-    # an
-    led.off()
-    sleep(f['corchea'])
-    # 4
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # octavo compas
-    #1
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    #an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # 2
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # 3
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # 4
-    playSound()
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-    # an
-    led.on()
-    sleep(f['corchea']*0.8)
-    led.off()
-    sleep(f['corchea']*0.2)
-
-
-def despedida():
     pass
+
+def encender_led(led):
+    led.on()
+    sleep(f['corchea'])
+    led.off()
+
+def apagar_led(led):
+    led.off()
+    sleep(f['corchea'])
+
+def nivel_1():
+    # primer compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    # 2
+    playSound()
+    encender_led(led3)
+    # an
+    apagar_led(led4)
+    # 3
+    playSound()
+    encender_led(led5)
+    # an
+    apagar_led(led6)
+    # 4
+    playSound()
+    encender_led(led7)
+    # an
+    apagar_led(led8)
+    #segundo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    apagar_led(led8)
+
 
 led1,led2,led3,led4,led5,led6,led7,led8 = LED(14),LED(15),LED(18),LED(23),LED(24),LED(25),LED(8),LED(7)  #led de prueba para saludo y repite el patron
 shutdown_button(10) #define boton de apagado en el gpio
 sonido_mas,sonido_menos,bmp_mas,bmp_menos,pulsado= Button(2),Button(3),Button(4),Button(17),Button(27)
 nivel = 1       #define el nivel que vamos a practicar
+centinela_reaction= 0 #esta variable cambiara de estado cuando la persona deba de presionar el boton 0 para realse 1 para push
+
 #tempo = int(input("Enter a tempo: "))    #el tempo en el cual nos vamos a mover
 tempo=60
 f = calcular_figuras(tempo)
@@ -387,7 +85,7 @@ for i in [1,2,3,4,5,6,7,8]:
     sleep(f['negra'])
 while True:
     if nivel==1:
-        nivel_1(led1)
+        nivel_1()
     elif nivel ==2:
         nivel_2(led1)
     elif nivel == 3:
