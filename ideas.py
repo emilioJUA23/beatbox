@@ -68,6 +68,132 @@ def nivel_1():
     apagar_led(led7)
     #an
     apagar_led(led8)
+    #tercer compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    enceder_led(led8)
+    #cuarto compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    enceder_led(led8)
+    #quinto compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    enceder_led(led3)
+    #an
+    enceder_led(led4)
+    #3
+    playSound()
+    enceder_led(led5)
+    #an
+    enceder_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    apagar_led(led8)
+    #sexto compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    enceder_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    enceder_led(led5)
+    #an
+    enceder_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
+    #septimo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    enceder_led(led3)
+    #an
+    enceder_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
+    #octavo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    enceder_led(led3)
+    #an
+    enceder_led(led4)
+    #3
+    playSound()
+    enceder_led(led5)
+    #an
+    enceder_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
 
 
 led1,led2,led3,led4,led5,led6,led7,led8 = LED(14),LED(15),LED(18),LED(23),LED(24),LED(25),LED(8),LED(7)  #led de prueba para saludo y repite el patron
