@@ -12,12 +12,24 @@ pygame.mixer.music.load('metro_bar.wav')
 
 def encender_led(led):
     led.on()
+    centinela_reaction=1
     sleep(f['corchea'])
     led.off()
+    centinela_reaction=0
 
 def apagar_led(led):
     led.off()
     sleep(f['corchea'])
+
+
+def when_pressed_b():
+    if centinela_reaction == 1:
+        led_r.off()
+        led_v.on()
+    else:
+        led_r.on()
+        led_v.off()
+
 
 def nivel_1():
     # primer compas
@@ -189,7 +201,8 @@ def nivel_1():
     #an
     encender_led(led8)
 
-def nivel_2(led):
+
+def nivel_2():
     # primer compas
     #1
     playSound()
@@ -360,7 +373,7 @@ def nivel_2(led):
     encender_led(led8)
 
 
-def nivel_3(led):
+def nivel_3():
     # primer compas
     #1
     playSound()
@@ -524,6 +537,306 @@ def nivel_3(led):
     encender_led(led5)
     #an
     encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+
+
+def nivel_4():
+    # primer compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    # 2
+    playSound()
+    apagar_led(led3)
+    # an
+    encender_led(led4)
+    # 3
+    playSound()
+    encender_led(led5)
+    # an
+    apagar_led(led6)
+    # 4
+    playSound()
+    apagar_led(led7)
+    # an
+    encender_led(led8)
+    #segundo compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #tercer compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #cuarto compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    enceder_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #quinto compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    apagar_led(led8)
+    #sexto compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #septimo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    enceder_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #octavo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
+
+
+def nivel_5():
+    # primer compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    # 2
+    playSound()
+    apagar_led(led3)
+    # an
+    encender_led(led4)
+    # 3
+    playSound()
+    encender_led(led5)
+    # an
+    apagar_led(led6)
+    # 4
+    playSound()
+    encender_led(led7)
+    # an
+    apagar_led(led8)
+    #segundo compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    encender_led(led8)
+    #tercer compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    encender_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    apagar_led(led8)
+    #cuarto compas
+    #1
+    playSound()
+    encender_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    apagar_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    enceder_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    apagar_led(led7)
+    #an
+    encender_led(led8)
+    #quinto compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    encender_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    encender_led(led4)
+    #3
+    playSound()
+    apagar_led(led5)
+    #an
+    apagar_led(led6)
+    #4
+    playSound()
+    encender_led(led7)
+    #an
+    apagar_led(led8)
+    #sexto compas
+    #1
+    playSound()
+    apagar_led(led1)
+    #an
+    apagar_led(led2)
+    #2
+    playSound()
+    encender_led(led3)
+    #an
+    apagar_led(led4)
+    #3
+    playSound()
+    encender_led(led5)
+    #an
+    apagar_led(led6)
     #4
     playSound()
     apagar_led(led7)
@@ -536,6 +849,7 @@ shutdown_button(10) #define boton de apagado en el gpio
 sonido_mas,sonido_menos,bmp_mas,bmp_menos,pulsado= Button(2),Button(3),Button(4),Button(17),Button(27)
 nivel = 1       #define el nivel que vamos a practicar
 centinela_reaction= 0 #esta variable cambiara de estado cuando la persona deba de presionar el boton 0 para realse 1 para push
+led_r, led_v= None,None
 
 #tempo = int(input("Enter a tempo: "))    #el tempo en el cual nos vamos a mover
 tempo=60
@@ -545,11 +859,15 @@ for i in range(1,9):
     playSound()
     sleep(f['negra'])
 while True:
-    if nivel==1:
+    if nivel == 1:
         nivel_1()
-    elif nivel ==2:
-        nivel_2(led1)
+    elif nivel == 2:
+        nivel_2()
     elif nivel == 3:
-        nivel_3(led1)
+        nivel_3()
+    elif nivel == 4:
+        nivel_4()
+    elif nivel == 5:
+        nivel_5()
     else:
         pass
