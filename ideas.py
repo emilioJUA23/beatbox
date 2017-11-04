@@ -882,9 +882,9 @@ def nivel_5():
         encender_led(led8)
 
 
-led1,led2,led3,led4,led5,led6,led7,led8 = LED(14),LED(15),LED(18),LED(23),LED(24),LED(25),LED(8),LED(7)  #led de prueba para saludo y repite el patron
-shutdown_button(10) #define boton de apagado en el gpio
-sonido_mas,sonido_menos,bmp_mas,bmp_menos,pulsado= Button(2),Button(3),Button(4),Button(17),Button(27)
+led1,led2,led3,led4,led5,led6,led7,led8 = LED(29),LED(31),LED(32),LED(33),LED(35),LED(36),LED(37),LED(38)  #led de prueba para saludo y repite el patron
+#shutdown_button(10) #define boton de apagado en el gpio
+#sonido_mas,sonido_menos,bmp_mas,bmp_menos,pulsado= Button(2),Button(3),Button(4),Button(17),Button(27)
 nivel = 1       #define el nivel que vamos a practicar
 centinela_reaction= 0 #esta variable cambiara de estado cuando la persona deba de presionar el boton 0 para realse 1 para push
 led_r, led_v= None,None
