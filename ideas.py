@@ -1,3 +1,4 @@
+GPIOZERO_PIN_FACTORY=native python
 #import section
 from gpiozero import Device, LED
 from gpiozero import Button
