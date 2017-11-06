@@ -5,6 +5,7 @@ from time import sleep
 import pygame
 import funciones
 from funciones import calcular_figuras,shutdown_button,playSound
+from easygui import *
 
 pygame.mixer.pre_init(44100, -16, 1, 512)
 pygame.init()
@@ -884,7 +885,7 @@ def nivel_5():
 led1,led2,led3,led4,led5,led6,led7,led8 = LED(5),LED(6),LED(12),LED(13),LED(19),LED(16),LED(26),LED(20)  #led de prueba para saludo y repite el patron
 #shutdown_button(10) #define boton de apagado en el gpio
 #sonido_mas,sonido_menos,bmp_mas,bmp_menos,pulsado= Button(2),Button(3),Button(4),Button(17),Button(27)
-nivel = 1       #define el nivel que vamos a practicar
+nivel = buttonbox("Choose a level",title="level selection",choices=[1,2,3,4,5])       #define el nivel que vamos a practicar
 centinela_reaction= 0 #esta variable cambiara de estado cuando la persona deba de presionar el boton 0 para realse 1 para push
 led_r, led_v= None,None
 
