@@ -1,8 +1,6 @@
-GPIOZERO_PIN_FACTORY=native python
 #import section
 from gpiozero import Device, LED
 from gpiozero import Button
-from gpiozero.pins.native import NativeFactory
 from time import sleep
 import pygame
 import funciones
@@ -883,9 +881,7 @@ def nivel_5():
         #an
         encender_led(led8)
 
-my_factory = NativeFactory()
-
-led1,led2,led3,led4,led5,led6,led7,led8 = LED(27, pin_factory=my_factory),LED(6),LED(12),LED(13),LED(19),LED(16),LED(26),LED(20)  #led de prueba para saludo y repite el patron
+led1,led2,led3,led4,led5,led6,led7,led8 = LED(5),LED(6),LED(12),LED(13),LED(19),LED(16),LED(26),LED(20)  #led de prueba para saludo y repite el patron
 #shutdown_button(10) #define boton de apagado en el gpio
 #sonido_mas,sonido_menos,bmp_mas,bmp_menos,pulsado= Button(2),Button(3),Button(4),Button(17),Button(27)
 nivel = 1       #define el nivel que vamos a practicar
