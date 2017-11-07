@@ -2,7 +2,7 @@ try:
     from tkinter import *  # python 3
 except (SystemError, ValueError, ImportError):
     from Tkinter import *  # python 2
-from PIL import ImageTk, Image
+from PIL import Image
 import os
 
 root = Tk()  # create a Tk root window
@@ -35,8 +35,8 @@ button4 = Button(bottomFrame, text="4",command=lambda *args: makeSomething(4))
 button4.pack(side=LEFT,fill=BOTH,expand=1)
 button5 = Button(bottomFrame, text="5",command=lambda *args: makeSomething(5))
 button5.pack(side=LEFT,fill=BOTH,expand=1)
-img = ImageTk.PhotoImage(Image.open("duck.gif"))
-label = Label(topFrame,image=img)
+# img = ImageTk.PhotoImage(Image.open("duck.gif"))
+label = Label(topFrame,image= Image.open("duck.gif"))
 # label = Label(topFrame, text="Select a Level")
 # label.pack(expand=1, fill=BOTH)
 root.mainloop()  # starts the
