@@ -2,7 +2,6 @@ try:
     from tkinter import *  # python 3
 except (SystemError, ValueError, ImportError):
     from Tkinter import *  # python 2
-from PIL import *
 import os
 
 #primera forma es de nivel
@@ -38,10 +37,13 @@ button4 = Button(bottomFrame, text="4",command=lambda *args: makeSomething(4))
 button4.pack(side=LEFT,fill=BOTH,expand=1)
 button5 = Button(bottomFrame, text="5",command=lambda *args: makeSomething(5))
 button5.pack(side=LEFT,fill=BOTH,expand=1)
-img = ImageTk.PhotoImage(Image.open("duck.gif"))
-label = Label(topFrame,image= img)
-# label = Label(topFrame, text="Select a Level")
-# label.pack(expand=1, fill=BOTH)
+# img = ImageTk.PhotoImage(Image.open("duck.gif"))
+# label = Label(topFrame,image= img)
+Photo = PhotoImage(file="tux.png")
+originalPlantImage = PhotoImage(file="tux.png")
+Photo = originalPlantImage.subsample(3, 3)
+label = Label(topFrame, image=Photo)
+label.pack(expand=1, fill=BOTH)
 root.mainloop()  # starts the
 print(nivel)
 #segunda forma verifica bmp
@@ -57,5 +59,6 @@ button1 = Button(leftFrame, text="+")
 button1.pack(side=TOP, fill=BOTH, expand=1)
 button2 = Button(leftFrame, text="-")
 button2.pack(side=TOP, fill=BOTH, expand=1)
+root.mainloop()
 
 
