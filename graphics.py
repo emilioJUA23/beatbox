@@ -2,8 +2,8 @@ try:
     from tkinter import *  # python 3
 except (SystemError, ValueError, ImportError):
     from Tkinter import *  # python 2
-from PIL import Image
-import ImageTk,os, re
+from PIL import *
+import os
 
 root = Tk()  # create a Tk root window
 
