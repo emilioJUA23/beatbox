@@ -3,7 +3,7 @@ try:
 except (SystemError, ValueError, ImportError):
     from Tkinter import *  # python 2
 import os
-from gpiozero import Device, LED, Button
+from gpiozero import LED
 
 #primera forma es de nivel
 root = Tk()  # create a Tk root window
