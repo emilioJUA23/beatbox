@@ -1,6 +1,5 @@
 #import section
-from gpiozero import Device, LED
-from gpiozero import Button
+from gpiozero import Device, LED, Button
 from time import sleep
 import pygame
 import funciones
@@ -650,7 +649,7 @@ def nivel_4():
         apagar_led(led4)
         #3
         playSound()
-        enceder_led(led5)
+        encender_led(led5)
         #an
         apagar_led(led6)
         #4
@@ -718,7 +717,7 @@ def nivel_4():
         playSound()
         apagar_led(led5)
         #an
-        enceder_led(led6)
+        encender_led(led6)
         #4
         playSound()
         apagar_led(led7)
@@ -829,7 +828,7 @@ def nivel_5():
         apagar_led(led4)
         #3
         playSound()
-        enceder_led(led5)
+        encender_led(led5)
         #an
         apagar_led(led6)
         #4
@@ -882,18 +881,19 @@ def nivel_5():
         #an
         encender_led(led8)
 
-led1,led2,led3,led4,led5,led6,led7,led8 = LED(5),LED(6),LED(12),LED(13),LED(19),LED(16),LED(26),LED(20)  #led de prueba para saludo y repite el patron
+# definir primero los botones y luego definir los mismos pines como leds para verificar el estado de los mismo y que no interfiera con lo demas.
+led1,led2,led3,led4,led5,led6,led7,led8 = LED(5),LED(6),LED(12),LED(13),LED(19),LED(16),LED(26),LED(20)  #led y repite el patron
 #shutdown_button(10) #define boton de apagado en el gpio
 #sonido_mas,sonido_menos,bmp_mas,bmp_menos,pulsado= Button(2),Button(3),Button(4),Button(17),Button(27)
-nivel = int(buttonbox("Choose a level",title="level selection",choices=['1','2','3','4','5']))   #define el nivel que vamos a practicar
-centinela_reaction= 0 #esta variable cambiara de estado cuando la persona deba de presionar el boton 0 para realse 1 para push
-led_r, led_v= None,None
+nivel = 1   #define el nivel que vamos a practicar
+centinela_reaction = 0 #esta variable cambiara de estado cuando la persona deba de presionar el boton 0 para realse 1 para push
+led_r, led_v = None, None
 
 #tempo = int(input("Enter a tempo: "))    #el tempo en el cual nos vamos a mover
-tempo=60
+tempo = 60
 f = calcular_figuras(tempo)
 # prosigue el programa
-for i in range(1,9):
+for i in range(1, 9):
     playSound()
     sleep(f['negra'])
 while True:
