@@ -5,6 +5,7 @@ button2 = Button(5)
 led = None
 
 def say_hello():
+    global button1
     del button1
     led=LED(6)
     led.on()
