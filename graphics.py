@@ -91,5 +91,7 @@ button2.pack(side=TOP, fill=BOTH, expand=1)
 root.mainloop()
 print(bpm)
 les=LED(5)
-
+les.on()
+while True:
+    pass
 
