@@ -9,3 +9,6 @@ def say_hello():
     led.on()
 
 button2.when_pressed = say_hello
+
+while True:
+    pass
