@@ -3,6 +3,7 @@ try:
 except (SystemError, ValueError, ImportError):
     from Tkinter import *  # python 2
 import os
+from gpiozero import Device, LED, Button
 
 #primera forma es de nivel
 root = Tk()  # create a Tk root window
@@ -89,5 +90,6 @@ button2 = Button(leftFrame, text="-",command=lambda *args:makeSomething(None, "-
 button2.pack(side=TOP, fill=BOTH, expand=1)
 root.mainloop()
 print(bpm)
+les=LED(5)
 
 
