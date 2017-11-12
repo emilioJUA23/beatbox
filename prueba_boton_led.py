@@ -5,7 +5,7 @@ button2 = Button(5)
 led = None
 
 def say_hello():
-    button1.destroy()
+    button1=None
     led=LED(6)
     led.on()
 
